@@ -12,7 +12,7 @@ def read(xlsx_name):
     data = xlrd.open_workbook(xlsx_name)
     # 打开工作表
     # table = data.sheets()[0]
-    table = data.sheets()[1]
+    table = data.sheets()[0]
     # 获得所有行数
     nrows = table.nrows
 

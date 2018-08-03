@@ -18,7 +18,7 @@ def date(list):
             array = dict[key]
             array.append(tmp)
         else:
-            dict[key] = tmp
+            dict[key] = [tmp]
 
     return dict
 
@@ -35,14 +35,16 @@ def staff(list):
         date = tmp[1]
 
         if dict.__contains__(staff_id):
-            print('yes')
+
             array = dict[staff_id]
             array.append(date)
 
         else:
-            print('no')
+
             dict[staff_id] = [date]
 
     return dict
+
+
 
 
